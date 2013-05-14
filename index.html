@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio of Graham P Heath</title>
+  <link href='http://fonts.googleapis.com/css?family=Exo:200,400|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <div class="funHeader">
+  	<canvas id="jsboxes" data-processing-sources="http://projects.bygph.com/portfolio/jsboxes2.pde" width="800" height="150" >
+  		<p>Your browser does not support the canvas tag.</p>
+  		<!-- Note: you can put any alternative content here. -->
+  	</canvas>
+    </div>
+<section class="wrapper">
+    
+  <hgroup class="site-header">
+
+    <header class="h1"><a href="http://projects.bygph.com/portfolio">Portfolio of Graham P Heath</a></header>
+  </hgroup>
+
+  <div class="contents ">
+      <div class="moreInfo-wrapper">
+		  <section  id="moreInfo">
+		  </section>
+
+	  </div>
+    <div class="articles">
+
+      <article class="content group ">
+        <header class="content-header">
+	
+          <h1 class="h1">Watch</h1>
+        </header>
+        <figure  class='fig'>
+			<iframe width="343" height="192" src="http://www.youtube.com/embed/PmOpRfy5HIs?rel=0" frameborder="0" allowfullscreen></iframe> 
+  <figCaption class='caption'>
+	  <a class="moreInfo" href="madMen.html">more info</a>
+          </figCaption>
+        </figure>
+		
+        <figure  class='fig'>
+			<iframe width="343" height="192" src="http://www.youtube.com/embed/ZyAgt7Mps9k?rel=0" frameborder="0" allowfullscreen></iframe>          			
+  <figCaption class='caption'>
+	  <a class="moreInfo" href="time.html">more info</a>
+          </figCaption>
+        </figure>
+      </article>
+
+      <article class=" content group ">
+        <header class="content-header">
+          <h1 class="h1">Use</h1>
+        </header>
+        <figure class='fig'>
+			<img src="./glitchThumb.png" height="192" width="300"/>
+          <figCaption class='caption'>
+			  <a class="moreInfo" href="./gliptch.html">JPG Glitch Generators ( JS and Java )</a>
+          </figCaption>
+        </figure>
+        <figure class='fig'>
+			<img src="./idtgaStartScreen.png" height="209" width="300"/>
+          <figCaption class='caption'>
+			  <a class="moreInfo" href="./IDTGAChrome.html">It's Dangerous To Go Alone</a>
+          </figCaption>
+        </figure>
+      </article>
+
+      <article class=" content group ">
+        <header class="content-header">
+          <h1 class="h1">Experience</h1>
+        </header>
+        <figure class='fig'>
+			<img src="./largeGarlic.jpg" height="300" width="224"/>
+          <figCaption class='caption'>
+			  <a class="moreInfo" href="./garlic.html">LED Acrylic Garlic</a>
+          </figCaption>
+        </figure>
+      </article>
+      
+    </div>
+  </div>
+
+</section>
+<footer class="site-footer">
+	<nav class=" easyNav">
+		<ul>
+			<li class="easyNavItem">
+				<header class="content-header  ">More</header>
+				<p class="easyHidden"><a class="moreInfo" href="bio.html">Bio</a></p>
+				<p class="easyHidden"><a href="mailto:graham.p.heath@gmail.com">Graham.p.Heath@gmail.com</a></p>
+
+				<p class="easyHidden"><a href="http://projects.bygph.com/">Projects</a></p>
+			</li>
+		</ul>
+	</nav>
+  <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAvklEQVR42qWTAQ0DIQxFkXASkHASkIAEJEwCEiZhEiYBCUhAwhwwSN6Wn4V1JPtJ02ta3lZKXe/dfZEfloZl/LkqWgHCsDpTC2vDogVIFBYKD4eIC/nbCpAkqQceApy6UJcVcFB4l8OdOE1PHMhnYg/gTfUUNO5BVQHpD15fgIJNnfIXVV4nQatVAVmm0PGGaMMAxB3A3y1Yl9h2LtEeI61ZY7QeUuBgwQfrIX1CKt/GU7aXqewvk73O8dc6PwH3mIfRaHLnAAAAAABJRU5ErkJggg==" /> &nbsp;&nbsp;&nbsp;2013
+</footer>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.cycle.all.js"></script>
+<script src="enquire.js"></script>
+<script src="gallery.js"></script>
+<script src="processing.js" type="text/javascript"></script>
+<script type="text/javascript">
+function getProcessingSketchId () { return 'jsboxes'; }
+</script>
+
+<script >
+function toggleMoreInfo(){
+	$("#moreInfo").slideToggle();
+	 if ($('#moreInfo').is(':hidden')){
+		 $(".moreInfoClose").slideDown();	 	
+	 }else{
+	 	 $(".moreInfoClose").slideUp();	 	
+	 }
+
+
+	
+}
+  $(document).ready(function(){
+	  
+
+	  $('.moreInfo').on('click', function(e) {
+
+	    e.preventDefault();
+
+	    $.ajax({
+	      url: this.getAttribute('href'),
+	      dataType: 'html',
+	      method: 'get',
+		  
+	      success: function(data, status, xhr) {
+			 
+	        var new_service = $(data).filter(".wrapper").html();
+			  console.log(new_service);
+	        $('#moreInfo').slideUp('normal', function() {
+	          $(this).empty().append(" <br/> <a class='moreInfoClose' href='#' onclick='javascript:toggleMoreInfo();'>[-]Close</a>").append(new_service).append(" <br/> <a class='moreInfoClose' href='#' onclick='javascript:toggleMoreInfo();'>[-]Close</a>").slideDown('normal');
+	        });
+			$("body, html").animate({
+				scrollTop: 0});
+
+	      }
+	    });
+	  });
+	if($("body").hasClass("no-csstransforms")==false){
+ 
+	  $('.content').each(function (index){
+	      $(this).addClass("hiddenContent");
+	  });
+   }
+    $('.content').on('click', function(e){
+	  $(this).css("color",'#cc534d');
+      $(".content").each(function (index){
+	 	 $(this).removeClass("visibleContent");
+		 $(this).animate({scrollTop:0},1500);
+         $(this).addClass("hiddenContent");
+      });
+
+	 $(this).removeClass("hiddenContent");
+     $(this).addClass("visibleContent");
+    });
+    $('.easyNavItem').on('click', function(e){
+      $(".easyNavItem").each(function (index){
+		  $(this).children("p").each(function (index2){
+	 		 $(this).removeClass("easyVisible");
+			 $(this).addClass("easyHidden");
+		 });
+      });
+
+	  $(this).children("p").each(function (index2){
+	 	 $(this).removeClass("easyHidden");
+	     $(this).addClass("easyVisible");
+	 });
+    });
+
+  $("#jsboxes").css("height","0px");
+  $("#jsboxes").css("overflow","visible");
+	});
+
+</script>
+</body>
+</html>

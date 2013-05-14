@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio of Graham P Heath</title>
+  <link href='http://fonts.googleapis.com/css?family=Exo:200,400|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+    <div class="funHeader">
+  	<canvas id="jsboxes" data-processing-sources="http://projects.bygph.com/portfolio/jsboxes.pde" 
+  			width="600" height="100">
+  		<p>Your browser does not support the canvas tag.</p>
+  		<!-- Note: you can put any alternative content here. -->
+  	</canvas>
+  	<noscript>
+  		<p>JavaScript is required to view the contents of this page.</p>
+  	</noscript>
+    </div>
+
+    
+  <header class="site-header">
+
+    <h1 class="h1">Portfolio of Graham P Heath</h1>
+  </header>
+  <section class="wrapper">
+			<a href="http://projects.bygph.com/IDTGAChrome/">
+				<img src="./idtgaStartScreen.png" height="209" width="300"/><br/>
+				Click to play!
+			</a>
+	  <p>In the span of 2 weeks a team of 3 people and I devloped this Zelda style 2d action / puzzeler with a twist: The only weapon is a magic beam drawn between the two players. </p>
+	  <p>This was my first experience in Unity and it was an extremely impresive environment. We intend to consider this an early alpha and produce a real game from it, coming Fall 2013.
+	  <img src='./averageAreaColor.png'>
+	  <p>Above: In creating this tool, I developed another tool to debug the code of the larger tool. This was written as a test class for the text placement code.</p>
+
+	  <p>This code will be available as soon as the final kinks are worked out.</p>
+
+
+	</section>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.cycle.all.js"></script>
+<script src="enquire.js"></script>
+<script src="gallery.js"></script>
+<script src="processing.js" type="text/javascript"></script>
+<script type="text/javascript">
+function getProcessingSketchId () { return 'jsboxes'; }
+</script>
+
+<script >
+
+  $(document).ready(function(){
+    $('.content').on('click', function(e){
+	  $(this).css("color",'#cc534d');
+      $(".content").each(function (index){
+	 	 $(this).removeClass("visibleContent");
+		 
+         $(this).addClass("hiddenContent");
+      });
+
+	 $(this).removeClass("hiddenContent");
+     $(this).addClass("visibleContent");
+    });
+    $('.easyNavItem').on('click', function(e){
+      $(".easyNavItem").each(function (index){
+		  $(this).children("p").each(function (index2){
+	 		 $(this).removeClass("easyVisible");
+			 $(this).addClass("easyHidden");
+		 });
+      });
+
+	  $(this).children("p").each(function (index2){
+	 	 $(this).removeClass("easyHidden");
+	     $(this).addClass("easyVisible");
+	 });
+    });
+
+  $("#jsboxes").css("height","0px");
+  $("#jsboxes").css("overflow","visible");
+	});
+
+</script>
+</body>
+</html>

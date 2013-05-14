@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio of Graham P Heath</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Exo:200,400|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+    <div class="funHeader">
+  	<canvas id="jsboxes" data-processing-sources="http://projects.bygph.com/portfolio/jsboxes.pde" 
+  			width="600" height="100">
+  		<p>Your browser does not support the canvas tag.</p>
+  		<!-- Note: you can put any alternative content here. -->
+  	</canvas>
+  	<noscript>
+  		<p>JavaScript is required to view the contents of this page.</p>
+  	</noscript>
+    </div>
+
+    
+  <header class="site-header">
+
+    <h1 class="h1">Portfolio of Graham P Heath</h1>
+  </header>
+  <section class="wrapper">
+
+        <header class="content-header">
+	
+          <h1 class="h1">Bio</h1>
+        </header>
+   
+			<iframe width="720" height="384" src="http://www.youtube.com/embed/ZyAgt7Mps9k?rel=0" frameborder="0" allowfullscreen></iframe> 
+  
+	  <p>Demonstrating my more artistic side, <i>Time</i> is an abstract representation of the various kinds of time whe can feel. </p>
+
+	  <p>The most difficult part of creating this was pulling all of the pieces together, this is the first time I recorded the video and audio, and edited it together from a shot list composed by me.</p>
+	  
+  </section>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.cycle.all.js"></script>
+<script src="enquire.js"></script>
+<script src="gallery.js"></script>
+<script src="processing.js" type="text/javascript"></script>
+<script type="text/javascript">
+function getProcessingSketchId () { return 'jsboxes'; }
+</script>
+
+<script >
+
+  $(document).ready(function(){
+    $('.content').on('click', function(e){
+	  $(this).css("color",'#cc534d');
+      $(".content").each(function (index){
+	 	 $(this).removeClass("visibleContent");
+		 
+         $(this).addClass("hiddenContent");
+      });
+
+	 $(this).removeClass("hiddenContent");
+     $(this).addClass("visibleContent");
+    });
+    $('.easyNavItem').on('click', function(e){
+      $(".easyNavItem").each(function (index){
+		  $(this).children("p").each(function (index2){
+	 		 $(this).removeClass("easyVisible");
+			 $(this).addClass("easyHidden");
+		 });
+      });
+
+	  $(this).children("p").each(function (index2){
+	 	 $(this).removeClass("easyHidden");
+	     $(this).addClass("easyVisible");
+	 });
+    });
+
+  $("#jsboxes").css("height","0px");
+  $("#jsboxes").css("overflow","visible");
+	});
+
+</script>
+</body>
+</html>

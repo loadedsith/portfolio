@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio of Graham P Heath</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Exo:200,400|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+    <div class="funHeader">
+  	<canvas id="jsboxes" data-processing-sources="http://toad.local/portfolio/jsboxes.pde" 
+  			width="600" height="100">
+  		<p>Your browser does not support the canvas tag.</p>
+  		<!-- Note: you can put any alternative content here. -->
+  	</canvas>
+  	<noscript>
+  		<p>JavaScript is required to view the contents of this page.</p>
+  	</noscript>
+    </div>
+<section class="wrapper">
+    
+  <header class="site-header">
+
+    <h1 class="h1">Portfolio of Graham P Heath</h1>
+  </header>
+
+  <div class="contents ">
+    <div class="articles">
+
+      <article class="content group hiddenContent">
+   
+        <figure  class='fig'>
+
+			<figCaption class='caption'>
+				<p>Though this is an early example of my experince with microcontroller it is a
+
+	  <p>The most difficult part of creating this was pulling all of the pieces together, this is the first time I recorded the video and audio, and edited it together from a shot list composed by me.</p>
+	  
+          </figCaption>
+        </figure>
+      
+    </div>
+  </div>
+
+</section>
+<footer class="site-footer">
+	<nav class=" easyNav">
+		<ul>
+			<li class="easyNavItem">
+				<header class="content-header  ">About</header>
+				<p class="easyHidden"><a href="mailto:graham.p.heath@gmail.com">Graham.p.Heath@gmail.com</a></p>
+				<p class="easyHidden"><a href="bio.html">Bio</a></p>
+			</li>
+			<li class="easyNavItem">
+	  		  	<header class="content-header easyNavItem  ">Projects</header>
+				<p class="easyHidden"><a href="mailto:graham.p.heath@gmail.com">Graham.p.Heath@gmail.com</a></p>
+				<p class="easyHidden"><a href="bio.html">Bio</a></p>
+	  		</li>
+			<li class="easyNavItem">
+	 		  <header  class="content-header easyNavItem color three">Connect</header>
+			<p class="easyHidden"><a href="mailto:graham.p.heath@gmail.com">Graham.p.Heath@gmail.com</a></p>
+			<p class="easyHidden"><a href="bio.html">Bio</a></p>
+	  		</li>
+		</ul>
+	</nav>
+  <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAvklEQVR42qWTAQ0DIQxFkXASkHASkIAEJEwCEiZhEiYBCUhAwhwwSN6Wn4V1JPtJ02ta3lZKXe/dfZEfloZl/LkqWgHCsDpTC2vDogVIFBYKD4eIC/nbCpAkqQceApy6UJcVcFB4l8OdOE1PHMhnYg/gTfUUNO5BVQHpD15fgIJNnfIXVV4nQatVAVmm0PGGaMMAxB3A3y1Yl9h2LtEeI61ZY7QeUuBgwQfrIX1CKt/GU7aXqewvk73O8dc6PwH3mIfRaHLnAAAAAABJRU5ErkJggg==" /> &nbsp;&nbsp;&nbsp;2013
+</footer>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.cycle.all.js"></script>
+<script src="enquire.js"></script>
+<script src="gallery.js"></script>
+<script src="processing.js" type="text/javascript"></script>
+<script type="text/javascript">
+function getProcessingSketchId () { return 'jsboxes'; }
+</script>
+
+<script >
+
+  $(document).ready(function(){
+    $('.content').on('click', function(e){
+	  $(this).css("color",'#cc534d');
+      $(".content").each(function (index){
+	 	 $(this).removeClass("visibleContent");
+		 
+         $(this).addClass("hiddenContent");
+      });
+
+	 $(this).removeClass("hiddenContent");
+     $(this).addClass("visibleContent");
+    });
+    $('.easyNavItem').on('click', function(e){
+      $(".easyNavItem").each(function (index){
+		  $(this).children("p").each(function (index2){
+	 		 $(this).removeClass("easyVisible");
+			 $(this).addClass("easyHidden");
+		 });
+      });
+
+	  $(this).children("p").each(function (index2){
+	 	 $(this).removeClass("easyHidden");
+	     $(this).addClass("easyVisible");
+	 });
+    });
+
+  $("#jsboxes").css("height","0px");
+  $("#jsboxes").css("overflow","visible");
+	});
+
+</script>
+</body>
+</html>
