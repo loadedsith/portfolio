@@ -1,0 +1,110 @@
+html,body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #f5f7f9;
+	@include background(linear-gradient( #f5f7f9 0%,#e5ebee 49%,#d7dee3 51%,#f5f7f9 100%)  center center fixed);
+  @include background-size(cover);
+}
+
+#header{
+  @include grid-row();
+  .h1{
+    @extend .text-center;
+    @include grid-column(12);
+  }
+}
+.reveal-modal-bg { @include reveal-bg; }
+#moreInfoContainer{
+  @include grid-row();
+  #moreInfo{
+    @include reveal-modal-base(true, $reveal-default-width); 
+    @include reveal-modal-style($reveal-modal-bg, $reveal-modal-padding, true,
+     $reveal-border-style, $reveal-border-width,$reveal-border-color,true,$reveal-position-top );
+    
+    @extend large;
+  }
+  .close-reveal-modal { @include reveal-close($reveal-close-color); }
+}
+.f-dropdown.open {
+  @include box-shadow(0px 0px 12px rgba(255,255,255, 0.3));
+  
+}
+.content{
+  @extend .f-dropdown;
+  @extend .text-center;
+}
+
+#mainNav, footer{
+  @include grid-row();
+  text-align: center !important; 
+
+  & div{
+
+    @include grid-column(12);
+
+    & a{
+      font-size: $h3-font-size;
+      border: 1px solid #f0f;
+      @include box-shadow(0px 0px 20px rgba(255,255,255, 0.3));
+      @extend .extend;
+      @include radius;
+      @include button($button-med, rgba(255,255,255, 0.5), $global-radius, false, false, false);
+      @include dropdown-button;
+    }
+    & a:hover{
+      @include box-shadow(0px 0px 30px  rgba(255, 255, 255, 1));
+    }
+   /* & a:link{
+      @include box-shadow(0px 0px 12px rgba(126, 126, 255, 0.5));
+    }
+    & a:hover{
+      @include box-shadow(0px 0px 12px rgba(255, 255, 255, 0.5));
+    }
+    & a:visited{
+      @include box-shadow(0px 0px 12px rgba(255,100,255, 0.5));
+    }*/
+  }
+}
+@media #{$small} { 
+  #mainNav div{
+    @include grid-column(4);
+      } 
+      #main div a{
+          @extend .extend;
+      }
+}
+.open {
+/*  border-radius:30px!important;*/
+//  padding:0;
+//  margin:emCalc(26px) 0 0 0;
+  li{
+
+
+    margin-bottom:emCalc(4px);
+    border-bottom:emCalc(2px) dotted rgba($secondary-color, 0.4);
+  }
+
+}
+
+#funHeader, .jsboxes{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:0px!important;
+	overflow:visible;
+}
+
+a.moreInfoClose,.h1 a,
+a:link.moreInfoClose ,.h1 a:link,/*lord*/
+a:visited.moreInfoClose ,.h1 a:visited,/*vaders*/
+a:focus.moreInfoClose ,.h1 a:focus,/*former*/
+a:hover.moreInfoClose ,.h1 a:hover,/*handel:*/
+a:active.moreInfoClose ,.h1 a:active/*Anakin*/
+{
+	text-decoration:none;
+	color:#800040;
+}

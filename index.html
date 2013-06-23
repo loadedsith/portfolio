@@ -1,183 +1,157 @@
+
+
+</body>
+</html>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Portfolio of Graham P Heath</title>
+    <meta charset="UTF-8" />
   <link href='http://fonts.googleapis.com/css?family=Exo:200,400|Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/app.css">
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
 </head>
 <body>
-    <div class="funHeader">
-  	<canvas id="jsboxes" data-processing-sources="http://projects.bygph.com/portfolio/jsboxes2.pde" width="800" height="150" >
-  		<p>Your browser does not support the canvas tag.</p>
-  		<!-- Note: you can put any alternative content here. -->
-  	</canvas>
-    </div>
-<section class="wrapper">
+    <!-- <div class=" row ">
+      <canvas id="jsboxes" class="columns large-12 funHeader"data-processing-sources="http://projects.bygph.com/portfolio/jsboxes2.pde" width="800" height="150" >
+            <p>Your browser does not support the canvas tag.</p>
+          Note: you can put any alternative content here.
+          </canvas>
+    </div> -->
     
-  <hgroup class="site-header">
 
-    <header class="h1"><a href="http://projects.bygph.com/portfolio">Portfolio of Graham P Heath</a></header>
-  </hgroup>
-
-  <div class="contents ">
-      <div class="moreInfo-wrapper">
-		  <section  id="moreInfo">
-		  </section>
-
-	  </div>
-    <div class="articles">
-
-      <article class="content group ">
-        <header class="content-header">
-	
-          <h1 class="h1">Watch</h1>
-        </header>
-        <figure  class='fig'>
-			<iframe width="343" height="192" src="http://www.youtube.com/embed/PmOpRfy5HIs?rel=0" frameborder="0" allowfullscreen></iframe> 
-  <figCaption class='caption'>
-	  <a class="moreInfo" href="madMen.html">more info</a>
-          </figCaption>
-        </figure>
-		
-        <figure  class='fig'>
-			<iframe width="343" height="192" src="http://www.youtube.com/embed/ZyAgt7Mps9k?rel=0" frameborder="0" allowfullscreen></iframe>          			
-  <figCaption class='caption'>
-	  <a class="moreInfo" href="time.html">more info</a>
-          </figCaption>
-        </figure>
-      </article>
-
-      <article class=" content group ">
-        <header class="content-header">
-          <h1 class="h1">Use</h1>
-        </header>
-        <figure class='fig'>
-			<img src="./glitchThumb.png" height="192" width="300"/>
-          <figCaption class='caption'>
-			  <a class="moreInfo" href="./gliptch.html">JPG Glitch Generators ( JS and Java )</a>
-          </figCaption>
-        </figure>
-        <figure class='fig'>
-			<img src="./idtgaStartScreen.png" height="209" width="300"/>
-          <figCaption class='caption'>
-			  <a class="moreInfo" href="./IDTGAChrome.html">It's Dangerous To Go Alone</a>
-          </figCaption>
-        </figure>
-      </article>
-
-      <article class=" content group ">
-        <header class="content-header">
-          <h1 class="h1">Experience</h1>
-        </header>
-        <figure class='fig'>
-			<img src="./largeGarlic.jpg" height="300" width="224"/>
-          <figCaption class='caption'>
-			  <a class="moreInfo" href="./garlic.html">LED Acrylic Garlic</a>
-          </figCaption>
-        </figure>
-      </article>
-      
+  <div id='header' >
+      <h1 class="h1">
+          <a href="http://projects.bygph.com/portfolio">Portfolio of Graham P Heath</a>
+      </h1>
+  </div>
+  <div id='moreInfoContainer' class="row">
+    <div id="moreInfo" class="reveal-modal large" >
     </div>
   </div>
+  
+  <nav id="mainNav">
+        <div >
+          <a href="./#watch" data-dropdown="watchContent">Watch</a>
+        </div>
+        <div >
+          <a href="./#use" data-dropdown="useContent">Use</a>
+        </div>
+        <div >
+          <a href="./#experience" data-dropdown="experienceContent">Experience</a>
+        </div>
+  </nav>
+</div>
 
-</section>
-<footer class="site-footer">
-	<nav class=" easyNav">
-		<ul>
-			<li class="easyNavItem">
-				<header class="content-header  ">More</header>
-				<p class="easyHidden"><a class="moreInfo" href="bio.html">Bio</a></p>
-				<p class="easyHidden"><a href="mailto:graham.p.heath@gmail.com">Graham.p.Heath@gmail.com</a></p>
+  
+<footer class="site-footer text-center row">
 
-				<p class="easyHidden"><a href="http://projects.bygph.com/">Projects</a></p>
-			</li>
-		</ul>
-	</nav>
-  <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAvklEQVR42qWTAQ0DIQxFkXASkHASkIAEJEwCEiZhEiYBCUhAwhwwSN6Wn4V1JPtJ02ta3lZKXe/dfZEfloZl/LkqWgHCsDpTC2vDogVIFBYKD4eIC/nbCpAkqQceApy6UJcVcFB4l8OdOE1PHMhnYg/gTfUUNO5BVQHpD15fgIJNnfIXVV4nQatVAVmm0PGGaMMAxB3A3y1Yl9h2LtEeI61ZY7QeUuBgwQfrIX1CKt/GU7aXqewvk73O8dc6PwH3mIfRaHLnAAAAAABJRU5ErkJggg==" /> &nbsp;&nbsp;&nbsp;2013
+	<div class="columns small-12 large-4 small large-centered">
+    <a data-dropdown="about" class="expand secondary" href="about.html">About</a>
+<!--       <a data-dropdown="about"class="content-header small radius button secondary dropdown" href="about.html">About</a> -->
+
+</div>
+  
+<form class="row">
+  <div class="columns large-4 large-centered small-centered small-8 text-center">
+    <div class="row">
+      <div class="small-6 columns text-right">
+        <label for="right-label" class=" inline  left radius secondary">&nbsp;Falling Boxes&nbsp; </label>
+      </div>
+      <div class="small-6 columns   ">
+        <div class="switch round small right inline" style="width:60px">
+          <input id="fallingBoxes" name="switch-fallingBoxes" type="radio" checked>
+          <label for="fallingBoxes" onclick="">off</label>
+          <input id="fallingBoxes1" name="switch-fallingBoxes" type="radio">
+          <label for="fallingBoxes1" onclick="">on</label>
+          <span></span>
+        </div>
+      </div>
+   </div>
+  </div>
+</form>
 </footer>
+<ul data-dropdown-content id="useContent" class="content">
+  <li><a class="moreInfo" data-reveal-id="moreInfo" href="./gliptch.html">
+      <figure class='fig'>
+		<img src="./glitchThumb.png" height="192" width="300"/>
+        <figCaption class='caption'>
+		      <a class="moreInfo" data-reveal-id="moreInfo" href="./gliptch.html">JPG Glitch Generators ( JS and Java )
+        </figCaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a class="moreInfo" data-reveal-id="moreInfo" href="./IDTGAChrome.html">
+      <figure class='fig'>
+		    <img src="./idtgaStartScreen.png" height="209" width="300"/>
+        <figCaption class='caption'>
+          It's Dangerous To Go Alone
+        </figCaption>
+      </figure>
+    </a>
+  </li>
+</ul>
+<ul data-dropdown-content id="experienceContent" class="content">
+  <li>
+    <a class="moreInfo" data-reveal-id="moreInfo" href="./garlic.html">
+	    <figure class='fig'>
+  			<img src="./largeGarlic.jpg" height="300" width="224"/>
+  	    <figCaption class='caption'>
+    		  LED Acrylic Garlic
+  	    </figCaption>
+  	  </figure>
+    </a>
+  </li>
+</ul>
+<ul data-dropdown-content id="watchContent" class="content">
+  <li>
+    <a class="moreInfo" data-reveal-id="moreInfo" href="madMen.html">
+      <figure class='fig'>
+        <div class="flex-video">
+		      <iframe width="343" height="192" src="http://www.youtube.com/embed/PmOpRfy5HIs?rel=0" frameborder="0" allowfullscreen></iframe> 
+        </div>
+    		<figCaption class='caption'>
+          more info
+        </figCaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <figure class='fig'>
+      <div class="flex-video">
+        <iframe width="343" height="192" src="http://www.youtube.com/embed/ZyAgt7Mps9k?rel=0" frameborder="0" allowfullscreen></iframe>                
+      </div>
+      <figCaption class='caption'>
+        <a class="moreInfo" data-reveal-id="moreInfo" href="time.html">more info</a>
+      </figCaption>
+    </figure>
+  </li>
+</ul>
+<ul data-dropdown-content id="about" class="content">
+		<li><a class="moreInfo" href="bio.html">Bio</a></li>
+		<li><a href="mailto:graham.p.heath@gmail.com">Graham.p.Heath@gmail.com</a></p>
+		<li><a href="http://projects.bygph.com/">Projects</a></li>
+    <li>ϽϽ&nbsp;&nbsp;&nbsp;2013</li>
+</ul>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-<script src="jquery.cycle.all.js"></script>
-<script src="enquire.js"></script>
-<script src="gallery.js"></script>
 <script src="processing.js" type="text/javascript"></script>
+<script src="javascripts/foundation/foundation.js"></script>
+<script src="javascripts/foundation/foundation.dropdown.js"></script>
+<script src="javascripts/foundation/foundation.reveal.js"></script>
+
+<script>
+document.write('<script src=' +
+('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+'.js><\/script>')
+</script>
+
 <script type="text/javascript">
 function getProcessingSketchId () { return 'jsboxes'; }
 </script>
 
-<script >
-function toggleMoreInfo(){
-	$("#moreInfo").slideToggle();
-	 if ($('#moreInfo').is(':hidden')){
-		 $(".moreInfoClose").slideDown();	 	
-	 }else{
-	 	 $(".moreInfoClose").slideUp();	 	
-	 }
-
-
-	
-}
-  $(document).ready(function(){
-	  
-
-	  $('.moreInfo').on('click', function(e) {
-
-	    e.preventDefault();
-
-	    $.ajax({
-	      url: this.getAttribute('href'),
-	      dataType: 'html',
-	      method: 'get',
-		  
-	      success: function(data, status, xhr) {
-			 
-	        var new_service = $(data).filter(".wrapper").html();
-			  console.log(new_service);
-	        $('#moreInfo').slideUp('normal', function() {
-	          $(this).empty().append(" <br/> <a class='moreInfoClose' href='#' onclick='javascript:toggleMoreInfo();'>[-]Close</a>").append(new_service).append(" <br/> <a class='moreInfoClose' href='#' onclick='javascript:toggleMoreInfo();'>[-]Close</a>").slideDown('normal');
-	        });
-			$("body, html").animate({
-				scrollTop: 0});
-
-	      }
-	    });
-	  });
-	if($("body").hasClass("no-csstransforms")==false){
- 
-	  $('.content').each(function (index){
-	      $(this).addClass("hiddenContent");
-	  });
-   }
-    $('.content').on('click', function(e){
-	  $(this).css("color",'#cc534d');
-      $(".content").each(function (index){
-	 	 $(this).removeClass("visibleContent");
-		 $(this).animate({scrollTop:0},1500);
-         $(this).addClass("hiddenContent");
-      });
-
-	 $(this).removeClass("hiddenContent");
-     $(this).addClass("visibleContent");
-    });
-    $('.easyNavItem').on('click', function(e){
-      $(".easyNavItem").each(function (index){
-		  $(this).children("p").each(function (index2){
-	 		 $(this).removeClass("easyVisible");
-			 $(this).addClass("easyHidden");
-		 });
-      });
-
-	  $(this).children("p").each(function (index2){
-	 	 $(this).removeClass("easyHidden");
-	     $(this).addClass("easyVisible");
-	 });
-    });
-
-  $("#jsboxes").css("height","0px");
-  $("#jsboxes").css("overflow","visible");
-	});
-
-</script>
+<script src="javascripts/portfolio.js"></script>
 </body>
 </html>
