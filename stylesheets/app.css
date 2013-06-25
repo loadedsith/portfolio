@@ -81,7 +81,7 @@ img {
 }
 
 /* line 265, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_global.scss */
-.text-center, #header .h1, .content {
+.text-center, #header .h1, #moreInfoContainer .h1, .content {
   text-align: center !important;
 }
 
@@ -782,7 +782,7 @@ p.lead {
 /* line 111, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: rgba(255, 26, 141, 0.75);
   font-weight: 300;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
@@ -853,7 +853,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Exo", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #222222;
+  color: rgba(128, 0, 64, 0.75);
   text-rendering: optimizeLegibility;
   margin-top: 0.75em;
   margin-bottom: 0.5em;
@@ -862,7 +862,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 186, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #6f6f6f;
+  color: rgba(255, 26, 141, 0.75);
   line-height: 0;
 }
 
@@ -1021,7 +1021,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125em;
-  color: #555555;
+  color: rgba(230, 0, 115, 0.75);
 }
 /* line 310, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -1030,14 +1030,14 @@ blockquote cite:before {
 /* line 315, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: rgba(230, 0, 115, 0.75);
 }
 
 /* line 321, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: rgba(255, 26, 141, 0.75);
 }
 
 /* Microformats */
@@ -1224,7 +1224,7 @@ button, .button {
   font-size: 1em;
   background-color: rgba(128, 0, 64, 0.75);
   border-color: rgba(77, 0, 39, 0.75);
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 120, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
@@ -1232,13 +1232,13 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 /* line 131, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 172, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.secondary, .button.secondary {
   background-color: rgba(20, 181, 204, 0.75);
   border-color: rgba(15, 140, 158, 0.75);
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 120, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
@@ -1246,13 +1246,13 @@ button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button
 }
 /* line 131, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 173, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.success, .button.success {
   background-color: #5da423;
   border-color: #457a1a;
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 120, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
@@ -1260,13 +1260,13 @@ button.success:hover, button.success:focus, .button.success:hover, .button.succe
 }
 /* line 131, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 174, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.alert, .button.alert {
   background-color: #c60f13;
   border-color: #970b0e;
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 120, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
@@ -1274,7 +1274,7 @@ button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus
 }
 /* line 131, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 176, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.large, .button.large {
@@ -1320,7 +1320,7 @@ button.right-align, .button.right-align {
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
   background-color: rgba(128, 0, 64, 0.75);
   border-color: rgba(77, 0, 39, 0.75);
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
   cursor: default;
   opacity: 0.6;
   -webkit-box-shadow: none;
@@ -1332,7 +1332,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 /* line 131, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 142, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
@@ -1342,7 +1342,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
   background-color: rgba(20, 181, 204, 0.75);
   border-color: rgba(15, 140, 158, 0.75);
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
   cursor: default;
   opacity: 0.6;
   -webkit-box-shadow: none;
@@ -1354,7 +1354,7 @@ button.disabled.secondary:hover, button.disabled.secondary:focus, button[disable
 }
 /* line 131, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 142, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
@@ -1364,7 +1364,7 @@ button.disabled.secondary:hover, button.disabled.secondary:focus, button[disable
 button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
   background-color: #5da423;
   border-color: #457a1a;
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
   cursor: default;
   opacity: 0.6;
   -webkit-box-shadow: none;
@@ -1376,7 +1376,7 @@ button.disabled.success:hover, button.disabled.success:focus, button[disabled].s
 }
 /* line 131, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 142, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
@@ -1386,7 +1386,7 @@ button.disabled.success:hover, button.disabled.success:focus, button[disabled].s
 button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
   background-color: #c60f13;
   border-color: #970b0e;
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
   cursor: default;
   opacity: 0.6;
   -webkit-box-shadow: none;
@@ -1398,7 +1398,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
 }
 /* line 131, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-  color: rgba(128, 0, 64, 0.75);
+  color: rgba(20, 181, 204, 0.75);
 }
 /* line 142, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
 button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
@@ -2685,7 +2685,7 @@ small.error {
   border-bottom-style: solid;
   position: absolute;
   top: -30px;
-  left: 50%;
+  left: 25%;
   z-index: 99;
 }
 /* line 81, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_dropdown.scss */
@@ -2699,18 +2699,18 @@ small.error {
   border-bottom-style: solid;
   position: absolute;
   top: -32px;
-  left: 49%;
+  left: 24%;
   z-index: 98;
 }
 /* line 89, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_dropdown.scss */
 .f-dropdown.right:before, .right.content:before {
   left: auto;
-  right: 50%;
+  right: 25%;
 }
 /* line 93, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_dropdown.scss */
 .f-dropdown.right:after, .right.content:after {
   left: auto;
-  right: 49%;
+  right: 24%;
 }
 /* line 137, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_dropdown.scss */
 .f-dropdown li, .content li {
@@ -2790,7 +2790,13 @@ body {
   background-size: cover;
 }
 
-/* line 12, ../sass/_mtl.scss */
+/* line 11, ../sass/_mtl.scss */
+a, a:link, a:visited, a:focus, a:hover, a:active {
+  text-decoration: none;
+  color: rgba(20, 181, 204, 0.75);
+}
+
+/* line 17, ../sass/_mtl.scss */
 #header {
   width: 100%;
   margin-left: auto;
@@ -2809,7 +2815,7 @@ body {
 #header:after {
   clear: both;
 }
-/* line 14, ../sass/_mtl.scss */
+/* line 19, ../sass/_mtl.scss */
 #header .h1 {
   position: relative;
   padding-left: 0.9375em;
@@ -2817,8 +2823,18 @@ body {
   width: 100%;
   float: left;
 }
+/* line 29, ../sass/_mtl.scss */
+#header .h1 a,
+#header .h1 a:link,
+#header .h1 a:visited,
+#header .h1 a:focus,
+#header .h1 a:hover,
+#header .h1 a:active {
+  text-decoration: none;
+  color: rgba(128, 0, 64, 0.75) !important;
+}
 
-/* line 19, ../sass/_mtl.scss */
+/* line 36, ../sass/_mtl.scss */
 .reveal-modal-bg {
   position: fixed;
   height: 100%;
@@ -2831,7 +2847,7 @@ body {
   left: 0;
 }
 
-/* line 20, ../sass/_mtl.scss */
+/* line 39, ../sass/_mtl.scss */
 #moreInfoContainer {
   width: 100%;
   margin-left: auto;
@@ -2850,7 +2866,13 @@ body {
 #moreInfoContainer:after {
   clear: both;
 }
-/* line 22, ../sass/_mtl.scss */
+/* line 41, ../sass/_mtl.scss */
+#moreInfoContainer .h1 {
+  -webkit-box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
+}
+/* line 45, ../sass/_mtl.scss */
 #moreInfoContainer #moreInfo {
   visibility: hidden;
   display: none;
@@ -2881,8 +2903,17 @@ body {
 #moreInfoContainer #moreInfo > :last-child {
   margin-bottom: 0;
 }
-/* line 29, ../sass/_mtl.scss */
+/* line 52, ../sass/_mtl.scss */
+#moreInfoContainer .reveal-modal {
+  height: 80%;
+  max-height: 80% !important;
+  overflow: auto;
+}
+/* line 57, ../sass/_mtl.scss */
 #moreInfoContainer .close-reveal-modal {
+  position: fixed !important;
+  top: 5px !important;
+  right: 5px !important;
   font-size: 2.5em;
   line-height: 1;
   position: absolute;
@@ -2893,14 +2924,14 @@ body {
   cursor: pointer;
 }
 
-/* line 31, ../sass/_mtl.scss */
+/* line 64, ../sass/_mtl.scss */
 .f-dropdown.open, .open.content {
   -webkit-box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
   -moz-box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
 }
 
-/* line 40, ../sass/_mtl.scss */
+/* line 73, ../sass/_mtl.scss */
 #mainNav, footer {
   width: 100%;
   margin-left: auto;
@@ -2920,7 +2951,7 @@ body {
 #mainNav:after, footer:after {
   clear: both;
 }
-/* line 44, ../sass/_mtl.scss */
+/* line 77, ../sass/_mtl.scss */
 #mainNav div, footer div {
   position: relative;
   padding-left: 0.9375em;
@@ -2937,8 +2968,8 @@ body {
      @include box-shadow(0px 0px 12px rgba(255,100,255, 0.5));
    }*/
 }
-/* line 48, ../sass/_mtl.scss */
-#mainNav div a, footer div a {
+/* line 81, ../sass/_mtl.scss */
+#mainNav div h3, footer div h3 {
   font-size: 1.6875em;
   border: 1px solid #f0f;
   -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
@@ -2971,15 +3002,15 @@ body {
   padding-right: 3.1875em;
 }
 /* line 120, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
-#mainNav div a:hover, #mainNav div a:focus, footer div a:hover, footer div a:focus {
+#mainNav div h3:hover, #mainNav div h3:focus, footer div h3:hover, footer div h3:focus {
   background-color: rgba(230, 230, 230, 0.5);
 }
 /* line 126, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_buttons.scss */
-#mainNav div a:hover, #mainNav div a:focus, footer div a:hover, footer div a:focus {
+#mainNav div h3:hover, #mainNav div h3:focus, footer div h3:hover, footer div h3:focus {
   color: rgba(128, 0, 64, 0.75);
 }
 /* line 45, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_dropdown-buttons.scss */
-#mainNav div a:before, footer div a:before {
+#mainNav div h3:before, footer div h3:before {
   position: absolute;
   content: "";
   width: 0;
@@ -2990,24 +3021,24 @@ body {
   top: 50%;
 }
 /* line 80, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_dropdown-buttons.scss */
-#mainNav div a:before, footer div a:before {
+#mainNav div h3:before, footer div h3:before {
   border-width: 0.5625em;
   right: 1.5em;
   margin-top: -0.25em;
 }
 /* line 99, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.1.5/scss/foundation/components/_dropdown-buttons.scss */
-#mainNav div a:before, footer div a:before {
+#mainNav div h3:before, footer div h3:before {
   border-color: white transparent transparent transparent;
 }
-/* line 57, ../sass/_mtl.scss */
-#mainNav div a:hover, footer div a:hover {
+/* line 90, ../sass/_mtl.scss */
+#mainNav div h3:hover, footer div h3:hover {
   -webkit-box-shadow: 0px 0px 30px white;
   -moz-box-shadow: 0px 0px 30px white;
   box-shadow: 0px 0px 30px white;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 72, ../sass/_mtl.scss */
+  /* line 105, ../sass/_mtl.scss */
   #mainNav div {
     position: relative;
     padding-left: 0.9375em;
@@ -3016,17 +3047,17 @@ body {
     float: left;
   }
 }
-/* line 79, ../sass/_mtl.scss */
+/* line 112, ../sass/_mtl.scss */
 .open {
   /*  border-radius:30px!important;*/
 }
-/* line 83, ../sass/_mtl.scss */
+/* line 116, ../sass/_mtl.scss */
 .open li {
   margin-bottom: 0.25em;
   border-bottom: 0.125em dotted rgba(20, 181, 204, 0.4);
 }
 
-/* line 92, ../sass/_mtl.scss */
+/* line 125, ../sass/_mtl.scss */
 #funHeader, .jsboxes {
   display: none;
   position: absolute;
@@ -3034,15 +3065,4 @@ body {
   left: 0px;
   height: 0px !important;
   overflow: visible;
-}
-
-/* line 107, ../sass/_mtl.scss */
-a.moreInfoClose, .h1 a,
-a:link.moreInfoClose, .h1 a:link,
-a:visited.moreInfoClose, .h1 a:visited,
-a:focus.moreInfoClose, .h1 a:focus,
-a:hover.moreInfoClose, .h1 a:hover,
-a:active.moreInfoClose, .h1 a:active {
-  text-decoration: none;
-  color: #800040;
 }

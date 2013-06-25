@@ -120,7 +120,7 @@ $em-base: 16px !default;
  $header-font-family:'Exo', sans-serif;
  $header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+ $header-font-color: $primary-color;
 // $header-line-height: 1.4;
  $header-top-margin: .75em;
  $header-bottom-margin: .5em;
@@ -303,7 +303,7 @@ $em-base: 16px !default;
 //// Button text styles.
 
 // $button-font-family: inherit;
- $button-font-color: $primary-color;
+ $button-font-color: $secondary-color;
  $button-font-color-alt:  $primary-color;
 // $button-font-med: emCalc(16px);
 // $button-font-tny: emCalc(11px);
@@ -586,7 +586,7 @@ $em-base: 16px !default;
 
  $f-dropdown-triangle-size: 15px;
  $f-dropdown-triangle-color: rgba(255,255,255,0.3);
- $f-dropdown-triangle-side-offset: 50%;
+ $f-dropdown-triangle-side-offset: 25%;
 
 //// List elements.
 
