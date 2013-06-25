@@ -34,13 +34,71 @@
   
   <nav id="mainNav">
         <div >
-          <a href="./#watch" data-dropdown="watchContent">Watch</a>
+          <h3 class="button" data-dropdown="watchContent">Watch</h3>
+          <ul data-dropdown-content id="watchContent" class="content">
+            <li>
+              <a class="moreInfo" href="madMen.html">
+                <figure class='fig'>
+                  <div class="flex-video">
+                    <iframe width="343" height="192" src="http://www.youtube.com/embed/PmOpRfy5HIs?rel=0" frameborder="0" allowfullscreen></iframe> 
+                  </div>
+              		<figCaption class='caption'>
+                    more info
+                  </figCaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <figure class='fig'>
+                <div class="flex-video">
+                  <iframe width="343" height="192" src="http://www.youtube.com/embed/ZyAgt7Mps9k?rel=0" frameborder="0" allowfullscreen></iframe>                
+                </div>
+                <figCaption class='caption'>
+                  <a class="moreInfo" href="time.html">more info</a>
+                </figCaption>
+              </figure>
+            </li>
+          </ul>
         </div>
         <div >
-          <a href="./#use" data-dropdown="useContent">Use</a>
+          <h3 class="button"  data-dropdown="useContent">Use</h3>
+          <ul data-dropdown-content id="useContent" class="content">
+            <li><a class="moreInfo" href="gliptch.html">
+                <figure class='fig'>
+          		<img src="./glitchThumb.png" height="192" width="300"/>
+                  <figCaption class='caption'>
+          		      <a class="moreInfo" href="./gliptch.html">JPG Glitch Generators ( JS and Java )
+                  </figCaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a class="moreInfo" href="IDTGAChrome.html">
+                <figure class='fig'>
+          		    <img src="./idtgaStartScreen.png" height="209" width="300"/>
+                  <figCaption class='caption'>
+                    It's Dangerous To Go Alone
+                  </figCaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+          
         </div>
         <div >
-          <a href="./#experience" data-dropdown="experienceContent">Experience</a>
+          <h3 class="button" data-dropdown="experienceContent">Experience</h3>
+          <ul data-dropdown-content id="experienceContent" class="content">
+            <li>
+              <a class="moreInfo" href="garlic.html">
+          	    <figure class='fig'>
+            			<img src="./largeGarlic.jpg" height="300" width="224"/>
+            	    <figCaption class='caption'>
+              		  LED Acrylic Garlic
+            	    </figCaption>
+            	  </figure>
+              </a>
+            </li>
+          </ul>
         </div>
   </nav>
 </div>
@@ -73,63 +131,8 @@
   </div>
 </form>
 </footer>
-<ul data-dropdown-content id="useContent" class="content">
-  <li><a class="moreInfo" data-reveal-id="moreInfo" href="./gliptch.html">
-      <figure class='fig'>
-		<img src="./glitchThumb.png" height="192" width="300"/>
-        <figCaption class='caption'>
-		      <a class="moreInfo" data-reveal-id="moreInfo" href="./gliptch.html">JPG Glitch Generators ( JS and Java )
-        </figCaption>
-      </figure>
-    </a>
-  </li>
-  <li>
-    <a class="moreInfo" data-reveal-id="moreInfo" href="./IDTGAChrome.html">
-      <figure class='fig'>
-		    <img src="./idtgaStartScreen.png" height="209" width="300"/>
-        <figCaption class='caption'>
-          It's Dangerous To Go Alone
-        </figCaption>
-      </figure>
-    </a>
-  </li>
-</ul>
-<ul data-dropdown-content id="experienceContent" class="content">
-  <li>
-    <a class="moreInfo" data-reveal-id="moreInfo" href="./garlic.html">
-	    <figure class='fig'>
-  			<img src="./largeGarlic.jpg" height="300" width="224"/>
-  	    <figCaption class='caption'>
-    		  LED Acrylic Garlic
-  	    </figCaption>
-  	  </figure>
-    </a>
-  </li>
-</ul>
-<ul data-dropdown-content id="watchContent" class="content">
-  <li>
-    <a class="moreInfo" data-reveal-id="moreInfo" href="madMen.html">
-      <figure class='fig'>
-        <div class="flex-video">
-		      <iframe width="343" height="192" src="http://www.youtube.com/embed/PmOpRfy5HIs?rel=0" frameborder="0" allowfullscreen></iframe> 
-        </div>
-    		<figCaption class='caption'>
-          more info
-        </figCaption>
-      </figure>
-    </a>
-  </li>
-  <li>
-    <figure class='fig'>
-      <div class="flex-video">
-        <iframe width="343" height="192" src="http://www.youtube.com/embed/ZyAgt7Mps9k?rel=0" frameborder="0" allowfullscreen></iframe>                
-      </div>
-      <figCaption class='caption'>
-        <a class="moreInfo" data-reveal-id="moreInfo" href="time.html">more info</a>
-      </figCaption>
-    </figure>
-  </li>
-</ul>
+
+
 <ul data-dropdown-content id="about" class="content">
 		<li><a class="moreInfo" href="bio.html">Bio</a></li>
 		<li><a href="mailto:graham.p.heath@gmail.com">Graham.p.Heath@gmail.com</a></p>
@@ -141,6 +144,10 @@
 <script src="javascripts/foundation/foundation.js"></script>
 <script src="javascripts/foundation/foundation.dropdown.js"></script>
 <script src="javascripts/foundation/foundation.reveal.js"></script>
+<script src="javascripts/vendor/underscore.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script> -->
+<script src="javascripts/vendor/backbone.js"></script>
+<script src="javascripts/portfolio.js"></script>
 
 <script>
 document.write('<script src=' +
@@ -152,6 +159,6 @@ document.write('<script src=' +
 function getProcessingSketchId () { return 'jsboxes'; }
 </script>
 
-<script src="javascripts/portfolio.js"></script>
+
 </body>
 </html>
